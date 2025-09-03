@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+}
+
+/* Works in Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  background-color: #9fe8df;
+}
+
+.header {
+  text-align: center;
+  margin-block: 2rem;
+  color: #5e7a7d;
+}
+
+.splitter {
+  display: block;
+}
+
+.main {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.section-bill {
+  padding: 2rem;
+}
+
+#select {
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+.bill-div, .people-div {
+  position: relative;
+}
+
+.bill-div label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #5e7a7d;
+  font-weight: bold;
+}
+
+.bill-div img {
+  position: absolute;
+  left: 10px;
+  top: 60px;
+}
+
+.bill-div input {
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+  background-color: #f3f9fa;
+  border: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.bill-div input:hover, .custom:hover {
+  outline: 2px solid #26c2ae;
+  cursor: pointer;
+}
+
+.bill-div input::placeholder, .people-div input::placeholder {
+  font-size: 1.5rem;
+}
+
+.tip-buttons {
+  margin-block: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tip-btn {
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  background-color: #00474b;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.tip-btn:hover {
+  background-color: #26c2ae;
+  cursor: pointer;
+}
+
+.custom {
+  background-color: #f3f9fa;
+  color: #5e7a7d;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+.custom::placeholder {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.people-div label {
+  display: flex;
+  color: #5e7a7d;
+  font-size: 0.7rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#people:hover {
+  cursor: pointer;
+  border: 2px solid #0D686D;
+}
+
+#error-msg {
+  display: none;
+  color: red;
+}
+
+.error-border {
+  outline: 2px solid red;
+}
+
+.people-div img {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+}
+
+.people-div input {
+  width: 100%;
+  padding: 1rem;
+  text-align: right;
+  background-color: #f3f9fa;
+  border: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.section-result {
+  background-color: #00474b;
+  padding: 1rem;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.amount-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tip-amount, .total-people, .total-people-result {
+  width: 50%;
+}
+
+
+#tip, #total {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #26c2ae;
+  font-weight: bold;
+}
+
+.result-people-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+#total1,
+#tip1 {
+  color: white;
+}
+
+#total-person,
+#tip-person {
+  color: #5e7a7d;
+}
+
+.reset {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: #0D686D;
+  border: none;
+  color: #00474b;
+}
+
+.reset:hover {
+  background-color: #26c2ae;
+  cursor: pointer;
+}
+
+.active {
+    background-color: #26c2ae;
+}

@@ -1,0 +1,35 @@
+@media (min-width: 500px) {
+    .tip-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main {
+        width: 80%;
+        margin-inline: auto;
+        padding: 3rem;
+        margin-bottom: 4rem;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 770px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .main {
+        display: flex;
+        justify-content: stretch;
+        gap: 1rem;
+        width: 80%;
+        align-items: center;
+    }
+    .section-result {
+        padding: 3rem 1rem;
+    }
+    .reset {
+        margin-top: 9rem;
+    }
+}
